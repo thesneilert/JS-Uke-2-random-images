@@ -3,8 +3,9 @@ body {
     color: #cccccc;
 }
 
-.imageContainer{
-    border: solid black 2px;
-    width: 300px;
-    height: 300px;
+#imageContainer{
+    border: solid #cccccc0e 1px;
+    background-color: #1a1a1a;
+    width: 536px;
+    height: 354px;
 }

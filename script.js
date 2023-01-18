@@ -9,9 +9,9 @@ let image_array = [
 
   function valgfrittNavn(valgfrittElement) {
     let random_index = Math.floor(Math.random() * image_array.length);
-
     let selected_image = image_array[random_index]
+    //se i console hvilket bildet som blir vist
+    console.log(selected_image)
 
     valgfrittElement.innerHTML = `<img src=${selected_image}></img>`;
   }
-
