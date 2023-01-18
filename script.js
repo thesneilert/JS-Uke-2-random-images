@@ -13,5 +13,5 @@ let image_array = [
     //se i console hvilket bildet som blir vist
     console.log(selected_image)
 
-    valgfrittElement.innerHTML = `<img src=${selected_image}></img>`;
+    valgfrittElement.innerHTML = `<img id=image src=${selected_image}></img>`;
   }
