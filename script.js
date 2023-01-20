@@ -1,17 +1,24 @@
-let image_array = [
-    "./img/1.jpg",
-    "./img/2.jpg",
-    "./img/3.jpg",
-    "./img/4.jpg",
-    "./img/5.jpg",
-    "./img/6.jpg"
-  ];
+function valgfrittIfElse(){
+    let mynumber = Math.ceil(Math.random()* 3);
+    console.log(mynumber)
+    if(mynumber === 1){
+        return './img/1.jpg';
+    } 
+    else if(mynumber === 2) {
+        return './img/2.jpg';
+    }
+    else if(mynumber === 3) {
+       return './img/3.jpg';
+    }
+    else if(mynumber === 4) {
+      return './img/4.jpg';
+    }
+    else {
+      return './img/5.jpg';
+    }
+}
 
-  function valgfrittNavn(valgfrittElement) {
-    let random_index = Math.floor(Math.random() * image_array.length);
-    let selected_image = image_array[random_index]
-    //se i console hvilket bildet som blir vist
-    console.log(selected_image)
-
-    valgfrittElement.innerHTML = `<img id=image src=${selected_image}></img>`;
-  }
+function valgfrittNavn(elem) /* sender inn html element*/ {
+    console.log(elem)
+    elem.src = valgfrittIfElse();
+}
